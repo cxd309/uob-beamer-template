@@ -1,0 +1,18 @@
+% Required packages
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage[T1]{fontenc}
+
+% Settings
+\useinnertheme{uob}
+\useoutertheme{uob}
+\usecolortheme{uob}
+\usefonttheme{uob}
+
+\AtBeginSection[]
+{%
+    \begin{frame}
+        \frametitle{Outline}
+        \tableofcontents[currentsection]
+    \end{frame}
+}%
