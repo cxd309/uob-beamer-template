@@ -1,6 +1,26 @@
 # University of Birmingham Beamer Template
 This repository hosts a beamer template that matches the University of Birmingham's current brand guidelines.
 
+## Usage
+
+### Getting started
+Load the theme in the preamble:
+
+```latex
+\makeatletter
+\def\input@path{{template/}}
+\makeatother
+\usetheme[]{uob}
+```
+
+### Color modes
+The theme supports dark and light modes via a beamer option:
+
+```latex
+\usetheme[dark]{uob}  % Dark background, white text (default)
+\usetheme[light]{uob} % White background, black text
+```
+
 ## A note on fonts
 As per the University [Brand Portal](https://brand.birmingham.ac.uk/), there are two main typefaces: [Manrope](https://fonts.google.com/specimen/Manrope) (sans-serif) and [Larken](https://ellenlufftype.com/larken/) (serif). Manrope is available under the [SIL OPEN FONT LICENSE Version 1.1](https://openfontlicense.org/open-font-license-official-text/); as such, we have provided a local copy. Larken, however, is a licensed font, and cannot be provided.
 
