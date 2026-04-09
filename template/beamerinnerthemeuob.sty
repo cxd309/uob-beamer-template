@@ -48,7 +48,11 @@
                 xshift=-0.5cm,
                 outer sep=0pt,
             ] {
-                \includegraphics[height=\myimageheight]{template/logos/UoB.png}
+            	\ifuob@dark
+                	\includegraphics[height=\myimageheight]{template/logos/UoB_dark.png}
+               	\else
+               		\includegraphics[height=\myimageheight]{template/logos/UoB_light.png}
+               	\fi
             };
 
             \node (author) at (0, 0.33\myheight) [
