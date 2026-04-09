@@ -3,7 +3,11 @@
 \makeatletter
 \def\input@path{{template/}}
 \makeatother
-\usetheme{uob}
+
+% Switch between dark and light mode:
+% \usetheme[dark]{uob} (default)
+% \usetheme[light]{uob}
+\usetheme[dark]{uob}
 
 \usepackage{booktabs}
 
@@ -42,7 +46,9 @@
 \begin{frame}{Figures look rather nice.}
     \begin{figure}
         \centering
-        \includegraphics[width=0.5\linewidth]{template/logos/UoB.png}
+        % Comment / uncomment the appropriate logo for the color theme
+        \includegraphics[width=0.5\linewidth]{template/logos/UoB_dark.png}
+        %\includegraphics[width=0.5\linewidth]{template/logos/UoB_light.png}
         \caption{Caption}
         \label{fig:enter-label}
     \end{figure}

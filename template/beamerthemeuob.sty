@@ -3,6 +3,14 @@
 \RequirePackage{xcolor}
 \RequirePackage[T1]{fontenc}
 
+% Add light / dark mode toggle
+\newif\ifuob@dark
+\uob@darktrue % default: dark
+
+\DeclareOptionBeamer{dark}{\uob@darktrue}
+\DeclareOptionBeamer{light}{\uob@darkfalse}
+\ProcessOptionsBeamer
+
 % Settings
 \useinnertheme{uob}
 \useoutertheme{uob}
